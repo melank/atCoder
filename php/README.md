@@ -1,4 +1,4 @@
-## 設定内容
+## 環境
 
 | ツール                  | バージョン |
 |-------------------------|------------|
@@ -8,27 +8,40 @@
 
 ## 使い方
 
-### AtCoder にログイン
-
-```
-acc login
-oj login https://atcoder.jp
-```
-
 ### コンテスト問題をダウンロード
 
-```
+```bash
 acc new abc001
 ```
 
+各問題フォルダに `main.php` と `tests/` が作成されます。
+
 ### テスト実行
 
-```
-oj test -c "php main.php"
+```bash
+cd abc001/a
+oj test -c "php main.php" -d tests
 ```
 
 ### 提出
 
+CLI からの提出は AtCoder 側の変更により不安定です。ブラウザから直接提出してください。
+
+## テンプレート
+
+`acc new` 実行時に自動で `main.php` が作成されます。
+
+テンプレートの場所：
 ```
-acc submit
+~/Library/Preferences/atcoder-cli-nodejs/php/main.php
+```
+
+### 利用可能な関数
+
+```php
+getLine()       // 1行読み込み (string)
+getInt()        // 整数読み込み (int)
+getIntArray()   // スペース区切りの整数配列 (array)
+getLines($n)    // n行読み込み (array)
+printResult($r) // 結果出力（改行付き）
 ```
