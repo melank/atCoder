@@ -27,6 +27,14 @@ function printResult(int|float|string $result): void
     echo (string) $result . "\n";
 }
 
+/**
+ * 指定した小数点以下の桁数で出力する
+ */
+function printFloat(float $value, int $precision = 1): void
+{
+    printf("%." . $precision . "f\n", $value);
+}
+
 // Main
 function solve(): void {
     // Write your solution here
