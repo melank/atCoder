@@ -140,3 +140,4 @@ php tests/test.php
 
 - `practice_merge/` - 区間マージ問題
 - `practice_schedule/` - 会議室スケジューリング問題（貪欲法）
+- `practice_maxsum/` - 部分配列の最大和問題（動的計画法/カデンのアルゴリズム）
