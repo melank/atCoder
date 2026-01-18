@@ -139,10 +139,10 @@ php tests/test.php
 
 ## 既存の練習問題
 
-- `practice/merge/` - 区間マージ問題
 - `practice/schedule/` - 会議室スケジューリング問題（貪欲法）
 - `practice/maxsum/` - 部分配列の最大和問題（動的計画法/カデンのアルゴリズム）
 - `practice/binsearch/` - 二分探索問題
 - `practice/parentheses/` - 括弧の妥当性チェック問題（スタック）
 - `practice/rpn/` - 逆ポーランド記法の計算問題（スタック）
 - `practice/twosum/` - 2つの数の和問題（2ポインタ法）
+- `practice/prefixsum/` - 区間和クエリ問題（累積和）
