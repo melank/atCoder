@@ -146,3 +146,5 @@ php tests/test.php
 - `practice/rpn/` - 逆ポーランド記法の計算問題（スタック）
 - `practice/twosum/` - 2つの数の和問題（2ポインタ法）
 - `practice/prefixsum/` - 区間和クエリ問題（累積和）
+- `practice/subarraysum/` - 和がKになる部分配列の数（累積和 + ハッシュマップ）
+- `practice/slidingwindow/` - 長さKの部分配列の最大平均値（スライディングウィンドウ）
