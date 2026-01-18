@@ -9,16 +9,17 @@
 ### フォルダ構成
 
 ```
-php/practice_***/
-├── main.php           # 解答用ファイル（template.php をコピー）
-├── README.md          # 問題文
-└── tests/
-    └── test.php       # テストコード
+php/practice/
+└── ***/
+    ├── main.php           # 解答用ファイル（template.php をコピー）
+    ├── README.md          # 問題文
+    └── tests/
+        └── test.php       # テストコード
 ```
 
 ### 命名規則
 
-- フォルダ名: `practice_` + 問題の内容を表す英単語（例: `practice_schedule`, `practice_merge`）
+- フォルダ名: `practice/` + 問題の内容を表す英単語（例: `practice/schedule`, `practice/merge`）
 
 ### 各ファイルの作成方法
 
@@ -138,10 +139,10 @@ php tests/test.php
 
 ## 既存の練習問題
 
-- `practice_merge/` - 区間マージ問題
-- `practice_schedule/` - 会議室スケジューリング問題（貪欲法）
-- `practice_maxsum/` - 部分配列の最大和問題（動的計画法/カデンのアルゴリズム）
-- `practice_binsearch/` - 二分探索問題
-- `practice_parentheses/` - 括弧の妥当性チェック問題（スタック）
-- `practice_rpn/` - 逆ポーランド記法の計算問題（スタック）
-- `practice_twosum/` - 2つの数の和問題（2ポインタ法）
+- `practice/merge/` - 区間マージ問題
+- `practice/schedule/` - 会議室スケジューリング問題（貪欲法）
+- `practice/maxsum/` - 部分配列の最大和問題（動的計画法/カデンのアルゴリズム）
+- `practice/binsearch/` - 二分探索問題
+- `practice/parentheses/` - 括弧の妥当性チェック問題（スタック）
+- `practice/rpn/` - 逆ポーランド記法の計算問題（スタック）
+- `practice/twosum/` - 2つの数の和問題（2ポインタ法）
