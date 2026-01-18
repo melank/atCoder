@@ -151,3 +151,5 @@ php tests/test.php
 - `practice/anagram/` - アナグラム判定問題（ハッシュマップ/カウント）
 - `practice/climbstairs/` - 階段の登り方問題（動的計画法/フィボナッチ）
 - `practice/mincost/` - 最小コスト階段問題（動的計画法/最適化）
+- `practice/knapsack/` - ナップサック問題（動的計画法/2次元DP）
+- `practice/merge/` - 区間マージ問題（ソート + 線形走査）
