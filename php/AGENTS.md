@@ -149,3 +149,5 @@ php tests/test.php
 - `practice/subarraysum/` - 和がKになる部分配列の数（累積和 + ハッシュマップ）
 - `practice/slidingwindow/` - 長さKの部分配列の最大平均値（スライディングウィンドウ）
 - `practice/anagram/` - アナグラム判定問題（ハッシュマップ/カウント）
+- `practice/climbstairs/` - 階段の登り方問題（動的計画法/フィボナッチ）
+- `practice/mincost/` - 最小コスト階段問題（動的計画法/最適化）
