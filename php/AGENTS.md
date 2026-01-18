@@ -142,3 +142,4 @@ php tests/test.php
 - `practice_schedule/` - 会議室スケジューリング問題（貪欲法）
 - `practice_maxsum/` - 部分配列の最大和問題（動的計画法/カデンのアルゴリズム）
 - `practice_binsearch/` - 二分探索問題
+- `practice_parentheses/` - 括弧の妥当性チェック問題（スタック）
