@@ -148,3 +148,4 @@ php tests/test.php
 - `practice/prefixsum/` - 区間和クエリ問題（累積和）
 - `practice/subarraysum/` - 和がKになる部分配列の数（累積和 + ハッシュマップ）
 - `practice/slidingwindow/` - 長さKの部分配列の最大平均値（スライディングウィンドウ）
+- `practice/anagram/` - アナグラム判定問題（ハッシュマップ/カウント）
