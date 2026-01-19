@@ -136,20 +136,3 @@ php tests/test.php
 | 初級 | 配列操作、文字列操作、単純なループ |
 | 中級 | ソート + 線形探索、貪欲法、累積和 |
 | 上級 | 動的計画法、グラフ探索、二分探索 |
-
-## 既存の練習問題
-
-- `practice/schedule/` - 会議室スケジューリング問題（貪欲法）
-- `practice/maxsum/` - 部分配列の最大和問題（動的計画法/カデンのアルゴリズム）
-- `practice/binsearch/` - 二分探索問題
-- `practice/parentheses/` - 括弧の妥当性チェック問題（スタック）
-- `practice/rpn/` - 逆ポーランド記法の計算問題（スタック）
-- `practice/twosum/` - 2つの数の和問題（2ポインタ法）
-- `practice/prefixsum/` - 区間和クエリ問題（累積和）
-- `practice/subarraysum/` - 和がKになる部分配列の数（累積和 + ハッシュマップ）
-- `practice/slidingwindow/` - 長さKの部分配列の最大平均値（スライディングウィンドウ）
-- `practice/anagram/` - アナグラム判定問題（ハッシュマップ/カウント）
-- `practice/climbstairs/` - 階段の登り方問題（動的計画法/フィボナッチ）
-- `practice/mincost/` - 最小コスト階段問題（動的計画法/最適化）
-- `practice/knapsack/` - ナップサック問題（動的計画法/2次元DP）
-- `practice/merge/` - 区間マージ問題（ソート + 線形走査）

@@ -20,7 +20,7 @@ function solution(array &$intervals): array {
     }
 
     // バケット: start の値ごとに区間を格納
-    // array_fill で事前に容量を確保（各要素を`[]` で初期化）
+    // array_fill で事前に容量を確保（各要素を `[]` で初期化）
     $buckets = array_fill(0, MAX_VALUE + 1, []);
 
     foreach ($intervals as $interval) {
