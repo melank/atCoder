@@ -12,25 +12,19 @@ function printResult(int|float|string $result): void
  * @return bool 有効な括弧列なら true
  */
 function solution(string $s): bool {
-    // TODO: 実装してください
-    $hidari = ['(', '[', '{'];
-    $kakko = str_split($s);
+    $pairs = ['(' => ')', '[' => ']', '{' => '}'];
     $stack = [];
 
-    if (count($kakko) %2 !== 0) {
-        return false;
-    }
-
-    foreach ($kakko as $k) {
-        if (in_array($k, $hidari)) {
-            array_push($stack, $k);
-        } else {
-            $pop = array_pop($stack);
-            if (($pop === '(' && $k !== ')') || ($pop === '{' && $k !== '}') || ($pop === '[' && $k !== ']')) {
-                return false;
-            }
+    for ($i = 0; $i < strlen($s); $i++) {
+        $c = $s[$i];
+        if (isset($pairs[$c])) {
+            // 開きカッコであるかどうか
+            $stack[] = $pairs[$c];  // 対応する閉じ括弧をpush
+        } elseif (array_pop($stack) !== $c) {
+            // 閉じカッコなら、対応する開きカッコがpopされるかを確認
+            return false;
         }
     }
 
-    return count($stack) === 0;
+    return empty($stack);
 }
