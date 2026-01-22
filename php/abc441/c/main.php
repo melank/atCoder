@@ -9,6 +9,10 @@ function getInt(): int {
     return (int) getLine();
 }
 
+function getArray(): array {
+    return explode(' ', getLine());
+}
+
 function getIntArray(): array {
     return array_map('intval', explode(' ', getLine()));
 }
@@ -28,7 +32,25 @@ function printResult(int|float|string $result): void {
 
 // Main
 function solve(): void {
-    // Write your solution here
+    [$n, $k, $x] = getArray();
+    $n = (int)$n;
+    $k = (int)$k;
+    $x = (int)$x;
+    $a = getIntArray();
+
+    // 降順ソート（大きい順）
+    rsort($a);
+
+    $sum = 0;
+    for ($i = $n - $k; $i < $n; $i++) {
+        $sum += $a[$i];
+        if ($sum >= $x) {
+            printResult($i + 1);
+            return;
+        }
+    }
+
+    printResult(-1);
 }
 
 solve();
