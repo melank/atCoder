@@ -22,13 +22,28 @@ function getLines(int $n): array {
 }
 
 // Output
-function printResult(int|float|string $result): void {
-    echo $result . "\n";
+function printResult(int|float|string $result): void
+{
+    printf("%.6f\n", $result);
 }
 
 // Main
 function solve(): void {
-    // Write your solution here
+    [$n, $k] = getIntArray();
+    $rates = getIntArray();
+
+    if ($k === 1) {
+        printResult(max($rates) / 2.0);
+        return;
+    }
+
+    // 上位k件を昇順で取得
+    asort($rates);
+    $topK = array_splice($rates, $n - $k, $k);
+
+    $c = array_reduce($topK, fn($c, $r) => ($c + $r) / 2.0, 0);
+
+    printResult($c);
 }
 
 solve();
