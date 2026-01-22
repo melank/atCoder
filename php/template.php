@@ -9,6 +9,10 @@ function readInt(): int {
     return (int) readLine();
 }
 
+function getArray(): array {
+    return explode(' ', readLine());
+}
+
 function readIntArray(): array {
     return array_map('intval', explode(' ', readLine()));
 }
