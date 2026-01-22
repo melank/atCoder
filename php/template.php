@@ -27,6 +27,11 @@ function printResult(int|float|string $result): void
     echo (string) $result . "\n";
 }
 
+function printFormattedResult(int|float|string $result, int $digit): void
+{
+    printf("%." . $digit . "f\n", $result);
+}
+
 /**
  * 指定した小数点以下の桁数で出力する
  */
