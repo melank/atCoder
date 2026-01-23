@@ -54,7 +54,7 @@ atcoder.jp	FALSE	/	FALSE	0	REVEL_SESSION	<コピーした値>
 #### 確認
 
 ```bash
-acc check-login
+acc session
 oj login https://atcoder.jp --check
 ```
 
