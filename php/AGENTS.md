@@ -25,7 +25,10 @@ php/practice/
 
 #### 1. main.php
 
-`php/template.php` をそのままコピーして作成してください。解答（実装）は含めません。
+`php/template.php` からヘルパー関数をコピーし、`solution()` 関数を追加。
+- ヘルパー関数（`getLine()`, `printResult()` 等）を含める
+- `solve()` 関数と最後の `solve();` 呼び出しは含めない
+- 解答（実装）は含めない（TODO コメントのみ）
 
 #### 2. README.md
 
