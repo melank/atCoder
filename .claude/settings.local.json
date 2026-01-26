@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(xargs -I {} sh -c 'echo \"\"=== {} ===\"\" && cat {}')",
+      "Bash(gh --version:*)",
+      "Bash(acc:*)",
+      "Bash(oj --version:*)",
+      "Bash(gh auth:*)",
+      "Bash(oj login:*)",
+      "Bash(git -C /Users/melank/Dev/atCoder status)",
+      "Bash(git -C /Users/melank/Dev/atCoder diff)",
+      "Bash(git -C /Users/melank/Dev/atCoder log --oneline -5)",
+      "Bash(git -C /Users/melank/Dev/atCoder checkout -b feature/add-claude-md-and-fix-readme)",
+      "Bash(git -C /Users/melank/Dev/atCoder add README.md CLAUDE.md)",
+      "Bash(git -C /Users/melank/Dev/atCoder commit -m \"$\\(cat <<''EOF''\nCLAUDE.mdの追加とREADME.mdのコマンド修正\n\n- Claude Code用のガイドファイル\\(CLAUDE.md\\)を追加\n- 出題エージェントの使い方を記載\n- README.mdのacc check-loginをacc sessionに修正\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C /Users/melank/Dev/atCoder push -u origin feature/add-claude-md-and-fix-readme)",
+      "Bash(gh pr create:*)",
+      "WebSearch",
+      "Bash(php:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nグラフ初級練習問題「友達グループ」を追加\n\n- php/practice/friend_groups/ に連結成分を数える練習問題を追加\n- DFS/BFSで解くグラフの基礎問題（ABC C問題レベル）\n- AGENTS.md の練習問題作成ガイドを更新\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\n配列操作入門練習問題「配列の反転」を追加\n\n2ポインタ法を使った配列反転問題（入門レベル）を追加。\n- README.md: 問題文とヒント\n- main.php: 解答テンプレート\n- tests/test.php: 7つのテストケース\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
