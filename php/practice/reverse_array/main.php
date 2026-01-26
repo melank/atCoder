@@ -51,8 +51,8 @@ function printFloat(float $value, int $precision = 1): void
  * @return array 反転された配列
  */
 function solution(array $nums): array {
-    // TODO: ここに解答を実装してください
-    // ヒント: 2ポインタ法を使い、配列の両端から要素を交換していく
-
-    return $nums;
+    return array_reduce($nums, function ($carry) use (&$nums) {
+        $carry[] = array_pop($nums);
+        return $carry;
+    }, []);
 }
