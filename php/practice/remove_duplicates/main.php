@@ -51,17 +51,11 @@ function printFloat(float $value, int $precision = 1): void
  * @return array 重複を削除した配列
  */
 function solution(array &$nums): array {
-    // TODO: ここに解答を実装してください
-    $next = -1;
-    $cursor = 0;
-    foreach ($nums as $n) {
-        if ($next === $n) {
-            array_splice($nums, $cursor, 1);
-            continue;
-        }
-        $next = $n;
-        $cursor++;
-    }
+    $nums = array_filter($nums, function ($n, $k) use ($nums) {
+        // 最初の要素、または一つ前の要素と値が異なれば true (残す)
+        return $k === 0 || $n !== $nums[$k - 1];
+    }, ARRAY_FILTER_USE_BOTH);
 
-    return $nums;
+    // インデックスを 0, 1, 2... と振り直して返す
+    return array_values($nums);
 }
