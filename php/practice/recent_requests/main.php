@@ -50,22 +50,16 @@ function printFloat(float $value, int $precision = 1): void
  * @return array 各リクエストに対するカウントの配列
  */
 function solution(array $timestamps): array {
+    $result = [];
+    $head = 0; // 有効なリクエストの先頭インデックス
 
-    $count = count($timestamps);
-    if ($count === 0) {
-        return [];
-    }
-
-    $result[] = 1;
-    for ($i = 1; $i < $count; $i++){
-        $cnt = 0;
-        for ($j = 0; $j <= $i; $j++) {
-            // 3000ms以内だったら
-            if ($timestamps[$i] - $timestamps[$j] <= 3000)  {
-                $cnt++;
-            }
+    foreach ($timestamps as $i => $t) {
+        // 3000msより古いものを先頭から除外
+        while ($timestamps[$head] < $t - 3000) {
+            $head++;
         }
-        $result[] = $cnt;
+        // 有効な範囲のリクエスト数 = 現在のインデックス - 先頭 + 1
+        $result[] = $i - $head + 1;
     }
 
     return $result;
